@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Simon</title>
+
+	<script src="https://fb.me/react-15.2.1.min.js"></script>
+	<script src="https://fb.me/react-dom-15.2.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.10.3/babel.min.js"></script>
+</head>
+<body>
+
+	<div id="game"></div>
+
+	<script type="text/babel">
+		
+		var GameBoard = React.createClass({
+			render: function() {
+				return (
+					<h1>Simon Game</h1>
+				);
+			}
+		});
+
+		ReactDOM.render(<GameBoard />, document.getElementById("game"));
+	</script>
+
+</body>
+</html>
